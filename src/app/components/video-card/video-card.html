@@ -1,0 +1,18 @@
+
+@if(snippet && statistics ){
+    <div class="  text-wrap text-break m-2 p-2  card-hover" [routerLink]="['/watch']" [queryParams]="{ v: videoItems.id }" >
+    
+      <img class="img-fluid rounded-1 w-100 " alt="thumbnail" [src]="url" >
+     
+     <ul class=" ">
+          <li class=" text-wrap text-break fw-bolder ">{{snippet.localized.title}}</li>
+        <li>{{snippet.channelTitle}}</li>
+      
+        <li>{{statistics.viewCount}} views</li>
+        <li></li>
+        <li></li>
+     </ul>
+    </div> 
+
+  
+}      

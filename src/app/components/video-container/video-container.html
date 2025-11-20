@@ -1,0 +1,20 @@
+
+
+
+<div class="d-flex flex-wrap ">
+
+  @if (videoData$ | async ) {
+    @for (item of (videoData$ | async); track item) {
+
+      <div class="col-lg-3 col-sm-12 ">
+        <app-video-card
+          [snippet]="item.snippet"
+          [statistics]="item.statistics"
+          [videoItems]="item">
+        </app-video-card>
+      </div>
+
+    }
+  }
+
+</div>
